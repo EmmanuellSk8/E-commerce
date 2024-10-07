@@ -67,6 +67,17 @@ header {
     padding: 20px 0;
 }
 
+.icons{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 3vh;
+}
+
+.log-out{
+    color: white;
+}
+
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -82,6 +93,7 @@ header {
 #cart-icon {
     font-size: 1.8rem;
     cursor: pointer;
+    right: 0;
 }
 
 .cart {
