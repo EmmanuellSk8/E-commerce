@@ -462,7 +462,7 @@ nav .item-menu:hover {
     align-content: center;
     position: relative;
     flex-direction: column;
-  
+
     padding: 2vh;
 }
 
@@ -551,22 +551,22 @@ nav .item-menu:hover {
 
 }
 
-.btn-into-login a{
+.btn-into-login a {
     color: #000000;
     font-weight: 700;
     font-size: 1.1rem;
-    background: #4eacf8;  
+    background: #4eacf8;
     border-radius: 6px;
     padding-inline: 3vh;
     border: none;
     padding-top: 1vh;
     padding-bottom: 1vh;
     transition-duration: .3s;
-    
+
 }
 
 .btn-into-login a:hover {
-    background: #008cff;  
+    background: #008cff;
     transition-duration: .3s;
 }
 
@@ -598,7 +598,7 @@ nav .item-menu:hover {
     opacity: 1;
 }
 
-.titleLogin{
+.titleLogin {
     font-size: 2.0rem;
     justify-content: center;
     display: flex;
@@ -606,3 +606,67 @@ nav .item-menu:hover {
     color: white;
     margin-top: 14vh;
 }
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    margin: 1vh;
+    position: fixed;
+    z-index: 1;
+    /* display: none; */
+}
+
+/* @media screen and (max-width:780px) {
+    .mobile{
+        display: flex;
+    }
+}
+ */
+
+.item-menu-mobile {
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-shadow: 0px 0px 10px #f0f0f0,
+        0px 0px 10px #ffffff;
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+.item-menu-mobile:hover {
+    transition: .5s;
+    color: #00e016;
+    text-shadow: 2px 2px 12px #00e016,
+        2px 2px 12px #00e016,
+        2px 2px 12px #00e016;
+}
+
+.items-before-menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vh;
+}
+
+.enlaces-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    margin: 8vh 1vh;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styleIndex.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="assets/img/letter-e.webp"  type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/letter-e.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Bienvenido! | tienda Online E-commerce</title>
@@ -33,6 +33,55 @@
                     </a>
                 </div>
             </div>
+        </nav>
+
+
+        <nav>
+            <div class="mobile">
+
+                <div class="items-before-menu-mobile">
+
+                    <div>
+                        <a href="#SectionTop">
+                            <p>
+                                <span class="textLogo1">E</span><span class="textLogo2">COMMERCE</span>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="more">
+                        <button id="toggle-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-3">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 6h10" />
+                                <path d="M4 12h16" />
+                                <path d="M7 12h13" />
+                                <path d="M4 18h10" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div id="menu" class="enlaces-mobile menu hidden">
+                    <a href="#producto" class="item-menu-mobile">Nuestros productos</a>
+                    <a href="#about" class="item-menu-mobile">Acerca de</a>
+                    <a href="#contacto" class="item-menu-mobile">Contactos</a>
+                    <a href="#testimonials" class="item-menu-mobile">Testimonios</a>
+                    <a href="#" class="item-menu-mobile iLogin btn-login">Iniciar sesión</a>
+                </div>
+            </div>
+            <script>const menu = document.getElementById('menu');
+                const toggleButton = document.getElementById('toggle-menu');
+
+                toggleButton.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('show');
+                });
+            </script>
         </nav>
     </header>
 
