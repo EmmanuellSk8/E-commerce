@@ -208,11 +208,13 @@ nav .item-menu:hover {
 }
 
 .sectionAbout {
+    display: flex;
     align-items: center;
     align-content: center;
     width: 100%;
     display: flex;
     flex-direction: row;
+
 }
 
 
@@ -222,22 +224,19 @@ nav .item-menu:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    gap: 4rem;
 
 }
 
 .about-image {
     flex: 1;
-    width: 300px;
+    width: 200px;
     height: 400px;
     margin: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 140px;
-    border-radius: 6px;
-    background: #232526;
-    background: -webkit-linear-gradient(to right, #727475, #414345);
-    background: linear-gradient(to right, #727475, #798a9b);
+    padding-left: 4rem;
+    aspect-ratio: 4/3;
 }
 
 .align {
@@ -307,7 +306,7 @@ nav .item-menu:hover {
     line-height: 1.6;
     font-size: 1.4rem;
     width: 1000px;
-    
+
 }
 
 .container-card-testimonials {
@@ -683,26 +682,153 @@ nav .item-menu:hover {
 }
 
 .about-image-responsive {
-    flex: 1;
-    width: 100%;
+    width: 400px;
     height: 400px;
     margin: 20px;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 140px;
     border-radius: 6px;
-    background: #232526;
-    background: -webkit-linear-gradient(to right, #727475, #414345);
-    background: linear-gradient(to right, #727475, #798a9b);
+    aspect-ratio: 4/3;
+    margin-inline: 20rem;
+}
+
+
+@media screen and (max-width:1800px) {
+
+    .about-text p {
+        width: 800px;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:1506px) {
+
+    .about-text p {
+        width: 100%;
+        display: flex;
+    }
+
+
+    .about-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        margin-inline: 6rem;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-image-responsive {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1380px) {
+
+    .about-text p {
+        width: 1000px;
+        display: flex;
+    }
 }
 
 @media screen and (max-width:1208px) {
     .logo2 {
         display: none;
     }
+
+    .about-text p {
+        width: 800px;
+        display: flex;
+    }
 }
 
+@media screen and (max-width:970px) {
+
+    .about-text p {
+        width: 600px;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:730px) {
+
+    .about-text p {
+        width: 400px;
+        display: flex;
+    }
+
+    .about-content {
+        padding: 50rem 0rem 50rem 0rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .about-text p {
+        width: 330px;
+        display: flex;
+    }
+
+    .about-content {
+        padding: 60rem 0rem 60rem 0rem;
+    }
+}
+
+@media screen and (max-width:470px) {
+
+    .about-text p {
+        width: 280px;
+        display: flex;
+    }
+
+    .about-text h2 {
+
+        width: 280px;
+        display: flex;
+    }
+
+    .titleSectionAbout {
+        font-size: 1.5rem;
+        margin-bottom: 6rem;
+        margin-inline: 4.5rem;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 70rem 0rem 70rem 0rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .about-text p {
+        width: 100px;
+        display: flex;
+    }
+
+    .about-text h2 {
+
+        width: 100px;
+        display: flex;
+    }
+
+    .titleSectionAbout {
+        font-size: 1.5rem;
+        margin-bottom: 6rem;
+        margin-inline: 4.5rem;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 125rem 0rem 125rem 0rem;
+    }
+}
 
 @media screen and (max-width:783px) {
     .mobile {
@@ -717,7 +843,3 @@ nav .item-menu:hover {
         justify-content: space-between;
     }
 }
-
-    .sectionAbout {
-        width: 100px;
-    }
