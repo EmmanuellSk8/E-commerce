@@ -1,0 +1,149 @@
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%);
+    margin: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+nav .menu-login {
+    display: flex;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    justify-content: center;
+    gap: 5vh;
+    z-index: 1;
+
+}
+
+nav .item-menu {
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-shadow: 0px 0px 10px #f0f0f0,
+        0px 0px 10px #ffffff;
+    font-size: 1.2rem;
+    transition: .2s;
+
+}
+
+nav .item-menu:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    color: #00e016;
+    text-shadow: 2px 2px 12px #00e016,
+        2px 2px 12px #00e016,
+        2px 2px 12px #00e016;
+}
+
+
+
+.textLogo1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #00b800;
+    text-transform: uppercase;
+}
+
+.textLogo2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.logo2 {
+    margin-right: 3vh;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.logo2:hover {
+    cursor: pointer;
+}
+
+
+.icon {
+    background-color: transparent;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+
+
+.item-menu-mobile {
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-shadow: 0px 0px 10px #f0f0f0,
+        0px 0px 10px #ffffff;
+    font-size: 1.2rem;
+    transition: .2s;
+
+}
+
+.item-menu-mobile:hover {
+    transition: .5s;
+    color: #00e016;
+    text-shadow: 2px 2px 12px #00e016,
+        2px 2px 12px #00e016,
+        2px 2px 12px #00e016;
+}
+
+.items-before-menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vh;
+    margin-inline-end: 3vh;
+
+}
+
+.enlaces-mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    margin: 8vh 1vh;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    backdrop-filter: blur(10px);
+
+}
+
+.enlaces-mobile.menu {
+    backdrop-filter: blur(10px);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+
+}
+
+.more{
+    display: none;
+}
+ 

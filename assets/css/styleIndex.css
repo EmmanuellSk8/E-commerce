@@ -13,17 +13,20 @@
 body {
     background-image: linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%);
     margin: auto;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 nav .menu-login {
     display: flex;
     position: fixed;
     background-color: transparent;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(10px);
     width: 100%;
     justify-content: center;
     gap: 5vh;
     z-index: 1;
+
 }
 
 nav .item-menu {
@@ -35,6 +38,7 @@ nav .item-menu {
         0px 0px 10px #ffffff;
     font-size: 1.2rem;
     transition: .2s;
+
 }
 
 nav .item-menu:hover {
@@ -45,6 +49,7 @@ nav .item-menu:hover {
         2px 2px 12px #00e016,
         2px 2px 12px #00e016;
 }
+
 
 
 .textLogo1 {
@@ -124,7 +129,7 @@ nav .item-menu:hover {
 .butnAbout:hover {
 
     transform: scale(1.1);
-    transition: .7s;
+    transition: .3s;
     opacity: 1;
     background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
 
@@ -613,7 +618,7 @@ nav .item-menu:hover {
 }
 
 .mobile {
-    background: #000000;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -643,6 +648,7 @@ nav .item-menu:hover {
         0px 0px 10px #ffffff;
     font-size: 1.2rem;
     transition: .2s;
+
 }
 
 .item-menu-mobile:hover {
@@ -659,10 +665,10 @@ nav .item-menu:hover {
     justify-content: space-between;
     gap: 10vh;
     margin-inline-end: 3vh;
+
 }
 
 .enlaces-mobile {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2vh;
@@ -670,6 +676,12 @@ nav .item-menu:hover {
     position: fixed;
     z-index: 1;
     display: none;
+    backdrop-filter: blur(10px);
+
+}
+
+.enlaces-mobile.menu {
+    backdrop-filter: blur(10px);
 }
 
 .hidden {
@@ -758,6 +770,10 @@ nav .item-menu:hover {
 
 @media screen and (max-width:730px) {
 
+    body{
+        overflow-y: none;
+    }
+
     .about-text p {
         width: 400px;
         display: flex;
@@ -839,7 +855,76 @@ nav .item-menu:hover {
         display: none;
     }
 
-    .menu-mobile {
-        justify-content: space-between;
+    .item-menu-mobile {
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .more{
+        order: 0;
+        margin-inline: 1rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .mobile {
+        display: inline;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .item-menu-mobile {
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .more{
+        order: 0;
+        margin-inline: 1rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .item-menu-mobile {
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .textLogo1 {
+        font-size: larger;
+    }
+
+    .textLogo2 {
+        font-size: larger;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:200px) {
+    
+    .more,
+    .logoLogin {
+      flex: 1;
+    }
+
+    .textLogo1 {
+        font-size: larger;
+    }
+
+    .textLogo2 {
+        font-size: larger;
+    }
+
+    .mobile {
+        display: flex;
+        flex: 1;
     }
 }

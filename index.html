@@ -41,14 +41,6 @@
 
                 <div class="items-before-menu-mobile">
 
-                    <div>
-                        <a href="#SectionTop">
-                            <p>
-                                <span class="textLogo1">E</span><span class="textLogo2">COMMERCE</span>
-                            </p>
-                        </a>
-                    </div>
-
                     <div class="more">
                         <button id="toggle-menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -64,6 +56,13 @@
                         </button>
                     </div>
 
+                    <div>
+                        <a href="#SectionTop">
+                            <p class="logoLogin">
+                                <span class="textLogo1">E</span><span class="textLogo2">COMMERCE</span>
+                            </p>
+                        </a>
+                    </div>
                 </div>
 
                 <div id="menu" class="enlaces-mobile menu hidden">
@@ -71,9 +70,10 @@
                     <a href="#about" class="item-menu-mobile">Acerca de</a>
                     <a href="#contacto" class="item-menu-mobile">Contactos</a>
                     <a href="#testimonials" class="item-menu-mobile">Testimonios</a>
-                    <a href="#" class="item-menu-mobile iLogin btn-login">Iniciar sesión</a>
+                    <a href="#" id="btn-login" class="item-menu-mobile iLogin btn-login">Iniciar sesión</a>
                 </div>
             </div>
+
             <script>const menu = document.getElementById('menu');
                 const toggleButton = document.getElementById('toggle-menu');
 
