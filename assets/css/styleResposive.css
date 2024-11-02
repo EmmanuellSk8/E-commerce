@@ -64,10 +64,11 @@ nav .item-menu:hover {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-
+    
 }
 
 .logo2 {
+    margin-top: 0.5rem;
     margin-right: 3vh;
     right: 0;
     top: 0;
@@ -95,18 +96,18 @@ nav .item-menu:hover {
     color: white;
     position: relative;
     text-shadow: 0px 0px 10px #f0f0f0,
-        0px 0px 10px #ffffff;
+    0px 0px 10px #ffffff;
     font-size: 1.2rem;
     transition: .2s;
-
+    
 }
 
 .item-menu-mobile:hover {
     transition: .5s;
     color: #00e016;
     text-shadow: 2px 2px 12px #00e016,
-        2px 2px 12px #00e016,
-        2px 2px 12px #00e016;
+    2px 2px 12px #00e016,
+    2px 2px 12px #00e016;
 }
 
 .items-before-menu-mobile {
@@ -115,7 +116,7 @@ nav .item-menu:hover {
     justify-content: space-between;
     gap: 10vh;
     margin-inline-end: 3vh;
-
+    
 }
 
 .enlaces-mobile {
@@ -127,7 +128,7 @@ nav .item-menu:hover {
     z-index: 1;
     display: none;
     backdrop-filter: blur(10px);
-
+    
 }
 
 .enlaces-mobile.menu {
@@ -140,10 +141,45 @@ nav .item-menu:hover {
 
 .show {
     display: flex;
-
+    
 }
 
-.more{
+.more {
     display: none;
 }
- 
+
+@media screen and (max-width:1400px) {
+    
+    .textLogo1{
+        font-size: 1.4rem;  
+    }
+    
+    .textLogo2{
+        font-size: 1.4rem;
+    }
+    
+    .logo2{
+        margin-top: 0.7rem;
+    }
+    
+}
+
+@media screen and (max-width:1240px) {
+    .logo2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: flex;
+    }
+
+    .more{
+        display: flex;
+    }
+}
