@@ -68,7 +68,6 @@ nav .item-menu:hover {
 }
 
 .logo2 {
-    margin-top: 0.5rem;
     margin-right: 3vh;
     right: 0;
     top: 0;
@@ -88,7 +87,9 @@ nav .item-menu:hover {
     cursor: pointer;
 }
 
-
+.logoLogin {
+    opacity: 0;
+}
 
 .item-menu-mobile {
     margin-top: 2vh;
@@ -100,7 +101,7 @@ nav .item-menu:hover {
     font-size: 1.2rem;
     transition: .2s;
     backdrop-filter: blur(10px);
-    
+
 
 }
 
@@ -143,27 +144,96 @@ nav .item-menu:hover {
 
 .more {
     display: none;
+    z-index: 2;
 }
 
 .menu {
-    backdrop-filter: blur(10px);  
+    backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    }
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
-  
-  .item-menu-mobile {
+}
+
+.item-menu-mobile {
     color: white;
     padding: 10px;
     text-decoration: none;
     font-size: 1.2em;
-  }
-  
+}
+
+
+header {
+    position: absolute;
+}
+
+.video {
+    width: 100%;
+    z-index: -1;
+
+}
+
+.container-btns {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.container-btn {
+    position: absolute;
+    top: 0;
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.butnLogin {
+    transition: .3s;
+    color: white;
+    font-weight: bold;
+    padding-inline: 5vh;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    background: #434343;
+    margin-bottom: 12vh;
+    background-image: radial-gradient(circle farthest-corner at 16.5% 28.1%, rgba(15, 27, 49, 1) 0%, rgba(0, 112, 218, 1) 90%);
+
+}
+
+.butnLogin:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+}
+
+.butnAbout {
+    transition: .3s;
+    color: white;
+    font-weight: bold;
+    padding-inline: 5vh;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+}
+
+.butnAbout:hover {
+
+    transform: scale(1.1);
+    transition: .3s;
+    opacity: 1;
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+
+}
+
+.textBtns {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
 
 @media screen and (max-width:1400px) {
 
@@ -176,7 +246,7 @@ nav .item-menu:hover {
     }
 
     .logo2 {
-        margin-top: 0.7rem;
+        margin-top: 0.3rem;
     }
 
 }
@@ -208,6 +278,10 @@ nav .item-menu:hover {
         display: flex;
         flex-direction: row;
     }
+
+    .logoLogin {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -238,7 +312,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:740px) {
-  
+
     .items-before-menu-mobile {
         gap: 32rem;
         display: flex;
@@ -248,7 +322,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:710px) {
-  
+
     .items-before-menu-mobile {
         gap: 30rem;
         display: flex;
@@ -258,7 +332,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:690px) {
-  
+
     .items-before-menu-mobile {
         gap: 28rem;
         display: flex;
@@ -269,7 +343,7 @@ nav .item-menu:hover {
 
 
 @media screen and (max-width:660px) {
-  
+
     .items-before-menu-mobile {
         gap: 26rem;
         display: flex;
@@ -279,7 +353,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:630px) {
-  
+
     .items-before-menu-mobile {
         gap: 24rem;
         display: flex;
@@ -289,7 +363,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:600px) {
-  
+
     .items-before-menu-mobile {
         gap: 22rem;
         display: flex;
@@ -300,7 +374,7 @@ nav .item-menu:hover {
 
 
 @media screen and (max-width:545px) {
-  
+
     .items-before-menu-mobile {
         gap: 20rem;
         display: flex;
@@ -310,7 +384,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:515px) {
-  
+
     .items-before-menu-mobile {
         gap: 18rem;
         display: flex;
@@ -320,7 +394,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:485px) {
-  
+
     .items-before-menu-mobile {
         gap: 16rem;
         display: flex;
@@ -330,7 +404,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:455px) {
-  
+
     .items-before-menu-mobile {
         gap: 14rem;
         display: flex;
@@ -340,7 +414,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:425px) {
-  
+
     .items-before-menu-mobile {
         gap: 12rem;
         display: flex;
@@ -350,7 +424,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:385px) {
-  
+
     .items-before-menu-mobile {
         gap: 10rem;
         display: flex;
@@ -360,7 +434,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:355px) {
-  
+
     .items-before-menu-mobile {
         gap: 8rem;
         display: flex;
@@ -370,7 +444,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:325px) {
-  
+
     .items-before-menu-mobile {
         gap: 6rem;
         display: flex;
@@ -380,7 +454,7 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:285px) {
-  
+
     .items-before-menu-mobile {
         gap: 4rem;
         display: flex;
@@ -390,11 +464,114 @@ nav .item-menu:hover {
 }
 
 @media screen and (max-width:260px) {
-  
+
     .items-before-menu-mobile {
         gap: 2rem;
         display: flex;
         flex-direction: row;
     }
 
+}
+
+@media screen and (max-width:1200px) {
+
+    .container-btn {
+        margin-top: 15vh;
+    }
+
+    .butnLogin {
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+    .butnAbout {
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+
+    .container-btn {
+        margin-top: 6vh;
+    }
+
+    .textBtns{
+        font-size: large;
+    }
+
+    .butnLogin {
+        padding-inline: 2vh;
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+    .butnAbout {
+        padding-inline: 2vh;
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+   
+    .container-btn {
+        margin-top: 3.5vh;
+    }
+
+
+    .textBtns{
+        display: none;
+    }
+
+    .butnLogin{
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+   
+
+    .butnLogin{
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+}
+
+
+@media screen and (max-width:445px) {
+   
+
+    .butnLogin{
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+   
+
+    .butnLogin{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:325px) {
+   
+
+    .butnLogin{
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width:240px) {
+   
+.container-btns{
+    display: none;
+}
 }
