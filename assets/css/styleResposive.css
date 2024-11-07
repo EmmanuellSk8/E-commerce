@@ -462,11 +462,10 @@ header {
 
 }
 
-
 .contact-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,
-            minmax(310px, 1fr));
+            minmax(310px, 400px));
     row-gap: 2rem;
     margin-inline: 4rem;
 }
@@ -491,6 +490,7 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     flex-wrap: wrap;
+  
 }
 
 .footer-logo h3 {
@@ -518,6 +518,7 @@ header {
 .footer-social {
     display: flex;
     gap: 15px;
+    margin: 2rem;
 }
 
 .footer-social a {
@@ -608,6 +609,11 @@ header {
         gap: 36rem;
         display: flex;
         flex-direction: row;
+    }
+
+    .footer-logo{
+        margin-right: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -882,10 +888,17 @@ header {
 
 @media screen and (max-width:390px) {
 
-
     .butnLogin {
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-links{
+        flex-direction: column;
     }
 }
 
