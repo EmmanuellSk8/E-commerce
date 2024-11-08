@@ -63,6 +63,8 @@
                             </p>
                         </a>
                     </div>
+
+
                 </div>
 
                 <div id="menu" class="enlaces-mobile menu hidden">
@@ -96,7 +98,7 @@
 
                 <p class="textBtns">Regístrate o inicia sesión para Comprar</p>
 
-                <a href="#" id="btn-login" class="butnLogin">
+                <a href="#" id="btn-loginn" class="butnLogin btn-login">
                     <p class="text-btn ">Iniciar sesión</p>
                 </a>
 
@@ -109,6 +111,7 @@
 
         </section>
     </section>
+
 
     <section class="sectionProduct" id="producto">
 
@@ -142,9 +145,6 @@
                 <p class="textProduct">Nvidia GeForce RTX 4080 Super</p>
             </article>
 
-        </div>
-        <div class="containerProducts2">
-
             <article class="cards">
                 <img class="imgProduct img" src="assets/img/procesador-1.webp" alt="">
                 <p class="textProduct">AMD Ryzen 5 7600X</p>
@@ -170,8 +170,18 @@
                 <p class="textProduct">Logitech G733, Diadema Gamer Inalámbrica</p>
             </article>
 
+            <article class="cards">
+                <img class="imgProduct img" src="assets/img/teclado1.webp" alt="">
+                <p class="textProduct">Steelseries - Teclado Hipermagnético Apex Pro Mini</p>
+            </article>
+
+            <article class="cards">
+                <img class="imgProduct img" src="assets/img/AMD-RX-7900.webp" alt="">
+                <p class="textProduct">AMD Radeon RX 7900 XTX</p>
+            </article>
         </div>
     </section>
+
 
     <section class="SectionAbout" id="about">
         <div class="titleSectionAbout">
@@ -245,6 +255,7 @@
         <img class="about-image-responsive" src="assets/img/foto-about.webp" alt="">
     </div> -->
     </section>
+
 
 
     <section class="SectionTestimonials" id="testimonials">
@@ -346,7 +357,7 @@
 
                         <p>Comprar en ECOMMERCE fue una experiencia fantástica. La plataforma es fácil de usar, y
                             encontré justo lo que estaba buscando. Además, el servicio de entrega fue puntual y los
-                            productos llegaron en perfectas condiciones. Sin duda, lo recomiendo a todos.
+                            productos llegaron en perfectas condiciones.
                         </p>
 
                     </div>
@@ -450,11 +461,9 @@
                             tiempo estimado. Muy recomendado.
 
                         </p>
-
                     </div>
                 </div>
             </article>
-
 
         </div>
     </section>
@@ -685,7 +694,7 @@
     </section>
 
     <script>
-
+        const btnOpenLoginnn = document.querySelector("#btn-loginn");
         const btnOpenLogin = document.querySelector("#btn-login");
         const btnOpenLoginn = document.querySelector(".btn-login");
         const btnCloseLogin = document.querySelectorAll(".close-login");
@@ -696,7 +705,13 @@
             loginModal.showModal();
         });
 
+
         btnOpenLoginn.addEventListener("click", () => {
+            loginModal.showModal();
+        });
+
+
+        btnOpenLoginnn.addEventListener("click", () => {
             loginModal.showModal();
         });
 
@@ -742,8 +757,9 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <a href="#">
-                           <span class="textLogo1">E</span><span class="textLogo2">COMMERCE</span>
-                  
+                    <p>
+                        <span class="textLogo1">E</span><span class="textLogo2">COMMERCE</span>
+                    </p>
                 </a>
             </div>
             <div class="footer-links">
@@ -766,9 +782,6 @@
     </footer>
 
 
-
-
-    <script src="assets/script.js"></script>
 </body>
 
 </html>

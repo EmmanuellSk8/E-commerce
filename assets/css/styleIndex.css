@@ -21,7 +21,7 @@ nav .menu-login {
     display: flex;
     position: fixed;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
     width: 100%;
     justify-content: center;
     gap: 5vh;
@@ -32,13 +32,13 @@ nav .menu-login {
 nav .item-menu {
     margin-top: 2vh;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     text-shadow: 0px 0px 10px #f0f0f0,
         0px 0px 10px #ffffff;
     font-size: 1.2rem;
     transition: .2s;
-
+    font-weight: 700;
 }
 
 nav .item-menu:hover {
@@ -76,6 +76,101 @@ nav .item-menu:hover {
 
 .logo2:hover {
     cursor: pointer;
+}
+
+
+.icon {
+    background-color: transparent;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.logoLogin {
+    opacity: 0;
+}
+
+.item-menu-mobile {
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-shadow: 0px 0px 10px #f0f0f0,
+        0px 0px 10px #ffffff;
+    font-size: 1.2rem;
+    transition: .2s;
+    backdrop-filter: blur(10px);
+
+
+}
+
+.item-menu-mobile:hover {
+    transition: .5s;
+    color: #00e016;
+    text-shadow: 2px 2px 12px #00e016,
+        2px 2px 12px #00e016,
+
+}
+
+.items-before-menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vh;
+    margin-inline-end: 3vh;
+    backdrop-filter: blur(10px);
+
+}
+
+.enlaces-mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    margin: 7vh auto;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+
+}
+
+.more {
+    display: none;
+    z-index: 2;
+}
+
+.menu {
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.item-menu-mobile {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+header {
+    position: fixed;
+    z-index: 3;
 }
 
 .video {
@@ -141,21 +236,26 @@ nav .item-menu:hover {
     color: rgb(255, 255, 255);
 }
 
-.titleSection {
+.sectionProduct {
+    margin-top: 10vh;
+    padding-inline: 20px;
+    color: white;
+}
+
+.titleSectionProduct {
     font-size: 2.0rem;
+    text-align: center;
     justify-content: center;
     display: flex;
     margin-bottom: 4vh;
     color: white;
 }
 
-.titleSectionAbout {
-    font-size: 2.0rem;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 4vh;
-    color: white;
-    margin-top: 14vh;
+.containerProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(300px, 1fr));
+    row-gap: 4rem;
 }
 
 .cards {
@@ -183,33 +283,12 @@ nav .item-menu:hover {
     padding: 8px;
 }
 
-
 .imgProduct {
-    aspect-ratio: 1/1;
+    aspect-ratio: 7/9;
     width: 100%;
     height: 100%;
     border-radius: 8px;
     opacity: 1;
-
-}
-
-.sectionProduct {
-    margin-top: 10vh;
-    padding-inline: 20px;
-    color: white;
-
-}
-
-.containerProducts {
-    margin-bottom: 5vh;
-    flex-direction: row;
-    display: flex;
-}
-
-.containerProducts2 {
-    flex-direction: row;
-    display: flex;
-
 }
 
 .sectionAbout {
@@ -219,6 +298,16 @@ nav .item-menu:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.titleSectionAbout {
+    font-size: 2.0rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4vh;
+    color: white;
+    margin-top: 14vh;
+    text-align: center;
 
 }
 
@@ -241,13 +330,6 @@ nav .item-menu:hover {
     display: flex;
     padding-left: 4rem;
     aspect-ratio: 4/3;
-}
-
-.align {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
 }
 
 
@@ -313,9 +395,10 @@ nav .item-menu:hover {
 
 }
 
+
 .container-card-testimonials {
     width: 400px;
-    height: 55vh;
+    height: fit-content;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -353,12 +436,13 @@ nav .item-menu:hover {
 }
 
 .container-testimonials {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(410px, 1fr));
+    row-gap: 4rem;
+    margin-inline: 4rem;
 }
+
 
 .contact-card-container {
     width: 300px;
@@ -378,10 +462,15 @@ nav .item-menu:hover {
 
 }
 
-
 .contact-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(310px, 400px));
+    row-gap: 2rem;
+    margin-inline: 4rem;
 }
+
+
 
 .footer {
     background-color: #282828;
@@ -401,6 +490,7 @@ nav .item-menu:hover {
     margin: 0 auto;
     padding: 0 20px;
     flex-wrap: wrap;
+
 }
 
 .footer-logo h3 {
@@ -428,6 +518,7 @@ nav .item-menu:hover {
 .footer-social {
     display: flex;
     gap: 15px;
+    margin: 2rem;
 }
 
 .footer-social a {
@@ -453,6 +544,8 @@ nav .item-menu:hover {
     color: #777777;
 }
 
+
+
 .login-container {
     align-items: center;
     align-content: center;
@@ -471,14 +564,13 @@ nav .item-menu:hover {
     align-content: center;
     position: relative;
     flex-direction: column;
-
     padding: 2vh;
 }
 
 .label-user-login {
     position: absolute;
     right: 0;
-    padding-inline: 2vh;
+    padding-inline: 4vh;
     padding-top: .9vh;
 }
 
@@ -504,11 +596,12 @@ nav .item-menu:hover {
 }
 
 .buttons-register-login {
-    flex-direction: row;
     display: flex;
     width: 100%;
     text-decoration: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
 
 .btn-login a {
@@ -519,6 +612,7 @@ nav .item-menu:hover {
     padding: 12px;
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     transition-duration: .5s;
+    white-space: nowrap;
 }
 
 .btn-login a:hover {
@@ -571,7 +665,7 @@ nav .item-menu:hover {
     padding-top: 1vh;
     padding-bottom: 1vh;
     transition-duration: .3s;
-
+    white-space: nowrap;
 }
 
 .btn-into-login a:hover {
@@ -613,93 +707,383 @@ nav .item-menu:hover {
     display: flex;
     margin-bottom: 2vh;
     color: white;
-    margin-top: 14vh;
-}
-
-.mobile {
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1;
-    display: none;
     width: 100%;
-    margin-inline-end: 12vh;
-}
-
-.icon {
-    background-color: transparent;
-}
-
-.icon:hover {
-    cursor: pointer;
+    margin-top: 14vh;
+    padding: 4rem;
 }
 
 
+@media screen and (max-width:1400px) {
 
-.item-menu-mobile {
-    margin-top: 2vh;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    text-shadow: 0px 0px 10px #f0f0f0,
-        0px 0px 10px #ffffff;
-    font-size: 1.2rem;
-    transition: .2s;
+    .textLogo1 {
+        font-size: 1.4rem;
+    }
 
-}
+    .textLogo2 {
+        font-size: 1.4rem;
+    }
 
-.item-menu-mobile:hover {
-    transition: .5s;
-    color: #00e016;
-    text-shadow: 2px 2px 12px #00e016,
-        2px 2px 12px #00e016,
-        2px 2px 12px #00e016;
-}
-
-.items-before-menu-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10vh;
-    margin-inline-end: 3vh;
+    .logo2 {
+        margin-top: 0.3rem;
+    }
 
 }
 
-.enlaces-mobile {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2vh;
-    margin: 8vh 1vh;
-    position: fixed;
-    z-index: 1;
-    display: none;
-    backdrop-filter: blur(10px);
+@media screen and (max-width:1240px) {
+    .logo2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .more {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .items-before-menu-mobile {
+        gap: 40rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logoLogin {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .items-before-menu-mobile {
+        gap: 38rem;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .items-before-menu-mobile {
+        gap: 36rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-logo {
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .items-before-menu-mobile {
+        gap: 34rem;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    .items-before-menu-mobile {
+        gap: 32rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-container {
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (max-width:710px) {
+
+    .items-before-menu-mobile {
+        gap: 30rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logoLogin {
+        margin-right: 11rem;
+    }
 
 }
 
-.enlaces-mobile.menu {
-    backdrop-filter: blur(10px);
-}
+@media screen and (max-width:690px) {
 
-.hidden {
-    display: none;
-}
-
-.show {
-    display: flex;
+    .items-before-menu-mobile {
+        gap: 28rem;
+        display: flex;
+        flex-direction: row;
+    }
 
 }
 
-.about-image-responsive {
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    display: none;
-    border-radius: 6px;
-    aspect-ratio: 4/3;
-    margin-inline: 20rem;
+
+@media screen and (max-width:660px) {
+
+    .items-before-menu-mobile {
+        gap: 26rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+
+    .items-before-menu-mobile {
+        gap: 24rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .items-before-menu-mobile {
+        gap: 22rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+@media screen and (max-width:545px) {
+
+    .items-before-menu-mobile {
+        gap: 20rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:515px) {
+
+    .items-before-menu-mobile {
+        gap: 18rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:485px) {
+
+    .items-before-menu-mobile {
+        gap: 16rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-card-testimonials {
+        width: 300px;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width:455px) {
+
+    .items-before-menu-mobile {
+        gap: 14rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    .items-before-menu-mobile {
+        gap: 12rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:385px) {
+
+    .items-before-menu-mobile {
+        gap: 10rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .container-card-testimonials {
+        width: 250px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:355px) {
+
+    .items-before-menu-mobile {
+        gap: 8rem;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:325px) {
+
+    .items-before-menu-mobile {
+        gap: 6rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:285px) {
+
+    .items-before-menu-mobile {
+        gap: 4rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:260px) {
+
+    .items-before-menu-mobile {
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .container-btn {
+        margin-top: 15vh;
+    }
+
+    .butnLogin {
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+    .butnAbout {
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+
+    .container-btn {
+        margin-top: 6vh;
+    }
+
+    .textBtns {
+        font-size: large;
+    }
+
+    .butnLogin {
+        padding-inline: 2vh;
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+    .butnAbout {
+        padding-inline: 2vh;
+        font-size: .8rem;
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+
+    .container-btn {
+        margin-top: 3.5vh;
+    }
+
+
+    .textBtns {
+        display: none;
+    }
+
+    .butnLogin {
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+    .butnLogin {
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+}
+
+
+@media screen and (max-width:445px) {
+
+
+    .butnLogin {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    .butnLogin {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:325px) {
+
+
+    .butnLogin {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width:240px) {
+
+    .container-btns {
+        display: none;
+    }
 }
 
 
@@ -764,12 +1148,17 @@ nav .item-menu:hover {
         width: 600px;
         display: flex;
     }
+
+
+    .about-content {
+        padding: 32rem 0rem 50rem 0rem;
+    }
 }
 
 
 @media screen and (max-width:730px) {
 
-    body{
+    body {
         overflow-y: none;
     }
 
@@ -859,7 +1248,7 @@ nav .item-menu:hover {
         font-weight: 600;
     }
 
-    .more{
+    .more {
         order: 0;
         margin-inline: 1rem;
     }
@@ -880,7 +1269,7 @@ nav .item-menu:hover {
         font-weight: 600;
     }
 
-    .more{
+    .more {
         order: 0;
         margin-inline: 1rem;
     }
@@ -908,10 +1297,10 @@ nav .item-menu:hover {
 
 
 @media screen and (max-width:200px) {
-    
+
     .more,
     .logoLogin {
-      flex: 1;
+        flex: 1;
     }
 
     .textLogo1 {
@@ -925,5 +1314,42 @@ nav .item-menu:hover {
     .mobile {
         display: flex;
         flex: 1;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .container-btns-login-cancel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .label-user-login {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .buttons-register-login {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .titleLogin {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:430px) {
+    .btn-into-login {
+        padding-inline: 0;
     }
 }
