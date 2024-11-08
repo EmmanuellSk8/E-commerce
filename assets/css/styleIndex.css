@@ -1030,8 +1030,8 @@ header {
     }
 
     .butnLogin {
-        margin-top: 1rem;
-        margin-bottom: 8rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
     }
 }
 
@@ -1039,8 +1039,8 @@ header {
 
 
     .butnLogin {
-        margin-top: 1rem;
-        margin-bottom: 6rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -1049,16 +1049,16 @@ header {
 
 
     .butnLogin {
-        margin-top: 1rem;
-        margin-bottom: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
 
 @media screen and (max-width:390px) {
 
     .butnLogin {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .footer-content {
@@ -1074,12 +1074,13 @@ header {
 
 
     .butnLogin {
-        margin-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: .4rem;
     }
 }
 
 
-@media screen and (max-width:240px) {
+@media screen and (max-width:285px) {
 
     .container-btns {
         display: none;
